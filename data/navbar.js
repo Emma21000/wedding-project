@@ -18,7 +18,7 @@ export const navbar = {
         },
         {
             title: "About",
-            path: "/about"
+            path: "#about"
         },
         {
             title: "Contact",

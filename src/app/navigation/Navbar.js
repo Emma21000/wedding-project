@@ -15,7 +15,7 @@ export default function Navbar({ data, theme, setTheme }) {
       <div
         className={`${  
           toggleMenu ? "flex" : "hidden"
-        } lg:w-auto bg-[#3f9a9c] px-30 justify-center lg:flex lg:static font-header absolute top-full left-0 w-[50%] flex-col gap-10 text-2xl font-thin  lg:flex-row lg:gap-6 lg:bg-transparent py-8 `}
+        } lg:w-auto h-screen lg:h-fit w-[60%] items-start justify-start bg-[#3f9a9c] lg:px-30 px-16 lg:flex lg:static font-header absolute top-full left-0 flex-col gap-8 text-2xl font-thin lg:flex-row lg:gap-6 py-8 `}
       >
             {data.list.map((elem, index) => (
               <Link
@@ -28,7 +28,7 @@ export default function Navbar({ data, theme, setTheme }) {
             ))}
       </div>
       <div className="lg:flex items-center justify-end flex-col lg:flex-row gap-10 hidden">
-        <button className=" font-header px-8 py-3 bg-[#378a8b] rounded-4xl text-3xl font-thin tracking-widest border-2 border-transparent hover:text-[#2e5859] hover:border-[#2e5859] hover:bg-white cursor-pointer transition-all duration-200">
+        <button className=" font-header px-8 py-3 bg-[#378a8b] rounded-4xl text-3xl tracking-widest border-2 border-transparent hover:text-[#2e5859] hover:border-[#2e5859] hover:bg-white cursor-pointer transition-all duration-200">
           Contact Now
         </button>
         <button className="cursor-pointer text-5xl"
